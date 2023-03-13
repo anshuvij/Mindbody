@@ -22,26 +22,7 @@ class CountryInfoViewModel {
     init(serviceHandler: CountryInfoService = CountryInfoService()) {
         self.serviceHandler = serviceHandler
     }
-    
-//    func getCountryInfo(completion : @escaping (CountryViewModel) -> Void) {
-//
-//        let weatherURL = Constants.Urls.urlForCountryInfo()
-//
-//        let resource = Resource<CountryInfo>(url: weatherURL) {data in
-//
-//            return try? JSONDecoder().decode(CountryInfo.self, from: data)
-//
-//        }
-//
-//        Webservice().load(resource: resource) { countryInfoResponse in
-//
-//            if let countryInfoResponse = countryInfoResponse {
-//                let vm = CountryViewModel(country: countryInfoResponse)
-//                completion(vm)
-//            }
-//
-//        }
-//    }
+
     
     func fetchCountryInfo() {
         
